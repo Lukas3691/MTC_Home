@@ -85,19 +85,24 @@ export default function Home() {
 
             {/* Right CTA Buttons */}
             <div className="flex items-center space-x-4">
-              <Button
-                variant="outline"
-                size="sm"
-                className="hidden sm:inline-flex"
+              <a
+                href="https://mtc-realty-app.vercel.app/login"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 hidden sm:inline-flex"
               >
                 Login
-              </Button>
-              <Button size="sm" className="hidden sm:inline-flex">
+              </a>
+              <a
+                href="https://mtc-realty-app.vercel.app/signup"
+                className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 hidden sm:inline-flex"
+              >
                 Join up
-              </Button>
-              <Button size="sm" className="sm:hidden">
+              </a>
+              <a
+                href="https://mtc-realty-app.vercel.app/signup"
+                className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 sm:hidden"
+              >
                 Join up
-              </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -119,9 +124,12 @@ export default function Home() {
                 AI-powered lead generation + follow-up for Canadian realtors. More showings, more closings—without chasing.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-base px-8 py-6">
+                <a
+                  href="https://mtc-realty-app.vercel.app/signup"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 text-base py-6"
+                >
                   Try it out
-                </Button>
+                </a>
                 <Button
                   variant="outline"
                   size="lg"
@@ -553,16 +561,18 @@ export default function Home() {
               Join Canadian realtors who are already using AI to generate and convert more leads. Start your free trial today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-base px-8 py-6">
+              <a
+                href="https://mtc-realty-app.vercel.app/signup"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 text-base py-6"
+              >
                 Try it out
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-base px-8 py-6"
+              </a>
+              <a
+                href="https://mtc-realty-app.vercel.app/signup"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base py-6"
               >
                 Join up
-              </Button>
+              </a>
             </div>
           </div>
         </div>
