@@ -86,19 +86,19 @@ export default function Home() {
             {/* Right CTA Buttons */}
             <div className="flex items-center space-x-4">
               <a
-                href="https://mtc-realty-app.vercel.app/login"
+                href="https://app.moneytreeleads.ca/login"
                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 hidden sm:inline-flex"
               >
                 Login
               </a>
               <a
-                href="https://mtc-realty-app.vercel.app/signup"
+                href="https://app.moneytreeleads.ca/signup"
                 className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 hidden sm:inline-flex"
               >
                 Join up
               </a>
               <a
-                href="https://mtc-realty-app.vercel.app/signup"
+                href="https://app.moneytreeleads.ca/signup"
                 className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 sm:hidden"
               >
                 Join up
@@ -125,7 +125,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://mtc-realty-app.vercel.app/signup"
+                  href="https://app.moneytreeleads.ca/signup"
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 text-base py-6"
                 >
                   Try it out
@@ -562,13 +562,13 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://mtc-realty-app.vercel.app/signup"
+                href="https://app.moneytreeleads.ca/signup"
                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 text-base py-6"
               >
                 Try it out
               </a>
               <a
-                href="https://mtc-realty-app.vercel.app/signup"
+                href="https://app.moneytreeleads.ca/signup"
                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 text-base py-6"
               >
                 Join up
