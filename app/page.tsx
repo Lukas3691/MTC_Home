@@ -588,13 +588,17 @@ export default function Home() {
               </p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Privacy
               </a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Terms
               </a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="mailto:adminmtree@gmail.com"
+                title="adminmtree@gmail.com"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
                 Contact
               </a>
             </div>
