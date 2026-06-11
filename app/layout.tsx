@@ -1,20 +1,39 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Manrope, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Money Tree Conversions - AI-Powered Real Estate Lead Generation",
-  description: "AI-powered lead generation + follow-up for Canadian realtors. More showings, more closings—without chasing.",
+  metadataBase: new URL("https://www.moneytreeleads.ca"),
+  title: "Money Tree Leads — Pre-Qualified Real Estate Leads, Streaming In",
+  description:
+    "AI-powered lead engine for Canadian realtors. Pre-qualified buyers and sellers, scored 0–100 on intent, financing, and timeline — delivered to your dashboard the second they exist. $299/mo.",
+  openGraph: {
+    title: "Money Tree Leads — Watch Warm Leads Stream In",
+    description:
+      "Pre-qualified real estate leads for Canadian realtors, scored by AI. One plan, $299/mo.",
+    url: "https://www.moneytreeleads.ca",
+    siteName: "Money Tree Leads",
+    locale: "en_CA",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,10 +42,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className={`dark ${spaceGrotesk.variable} ${manrope.variable} ${jetbrainsMono.variable}`}
+    >
+      <body className="antialiased">
         {children}
       </body>
     </html>
