@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy — Money Tree Conversions",
   description:
     "How Money Tree Conversions collects, uses, and protects personal information for our real estate lead platform.",
+  alternates: { canonical: "/privacy" },
 }
 
 export default function PrivacyPage() {

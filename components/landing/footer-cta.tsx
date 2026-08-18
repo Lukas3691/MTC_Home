@@ -3,12 +3,12 @@
 import { useRef } from "react";
 import Link from "next/link";
 import { Logo } from "@/components/landing/logo";
-import { gsap, useGSAP, SplitText, SCRAMBLE_CHARS, scrollToAnchor } from "@/lib/gsap";
+import { gsap, useGSAP, SplitText, SCRAMBLE_CHARS } from "@/lib/gsap";
 
-const ANCHOR_LINKS = [
-  { label: "FEED", hash: "#feed" },
-  { label: "ENGINE", hash: "#engine" },
-  { label: "PRICING", hash: "#pricing" },
+const PAGE_LINKS = [
+  { label: "HOW IT WORKS", href: "/how-it-works" },
+  { label: "PRICING", href: "/pricing" },
+  { label: "VS PORTAL LEADS", href: "/vs-portal-leads" },
 ] as const;
 
 export function FooterCTA() {
@@ -116,7 +116,7 @@ export function FooterCTA() {
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://app.moneytreeleads.ca/signup"
+              href="https://app.moneytreeleads.ca/sign-up"
               className="mtl-btn mtl-btn-primary px-[22px] py-4 text-[15px] md:px-[30px] md:py-5 md:text-[17px]"
             >
               $ subscribe
@@ -139,18 +139,10 @@ export function FooterCTA() {
         <Logo size="sm" />
 
         <nav aria-label="Footer" className="flex flex-wrap gap-4 md:gap-8">
-          {ANCHOR_LINKS.map(({ label, hash }) => (
-            <a
-              key={hash}
-              href={hash}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToAnchor(hash);
-              }}
-              className="hover:text-mtl-fg transition-colors"
-            >
+          {PAGE_LINKS.map(({ label, href }) => (
+            <Link key={href} href={href} className="hover:text-mtl-fg transition-colors">
               {label}
-            </a>
+            </Link>
           ))}
           <Link href="/privacy" className="hover:text-mtl-fg transition-colors">
             PRIVACY

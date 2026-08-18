@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap, useGSAP, SplitText, SCRAMBLE_CHARS, scrollToAnchor } from "@/lib/gsap";
 
-const SIGNUP_URL = "https://app.moneytreeleads.ca/signup";
+const SIGNUP_URL = "https://app.moneytreeleads.ca/sign-up";
 const PILL_TEXT = "$ ./qualified --realtor";
 
 /* ── neon money-tree image sequence ── */

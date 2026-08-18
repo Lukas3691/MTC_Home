@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Terms of Service — Money Tree Conversions",
   description:
     "Terms governing use of Money Tree Conversions software and services for real estate professionals.",
+  alternates: { canonical: "/terms" },
 }
 
 export default function TermsPage() {

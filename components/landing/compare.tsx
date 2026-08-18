@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { gsap, useGSAP, SplitText, SCRAMBLE_CHARS } from "@/lib/gsap";
 
 type CompareRow = {
@@ -199,6 +200,15 @@ export function ComparePanel() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="mt-6">
+        <Link
+          href="/vs-portal-leads"
+          className="mtl-mono text-[12px] tracking-[0.08em] text-mtl-fg-2 transition-colors hover:text-mtl-fg"
+        >
+          Full comparison: portal leads vs. Money Tree <span className="text-mtl-accent">→</span>
+        </Link>
       </div>
     </section>
   );

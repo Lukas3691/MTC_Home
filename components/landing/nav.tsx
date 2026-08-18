@@ -11,8 +11,8 @@ const NAV_LINKS = [
   { hash: "#pricing", label: "/pricing" },
 ] as const;
 
-const SIGNUP_URL = "https://app.moneytreeleads.ca/signup";
-const LOGIN_URL = "https://app.moneytreeleads.ca/login";
+const SIGNUP_URL = "https://app.moneytreeleads.ca/sign-up";
+const LOGIN_URL = "https://app.moneytreeleads.ca/sign-in";
 
 export function Nav() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -56,6 +56,8 @@ export function Nav() {
   );
 
   const onAnchorClick = (hash: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // On subpages the section doesn't exist — let the browser navigate to /#hash.
+    if (!document.querySelector(hash)) return;
     e.preventDefault();
     setOpen(false);
     scrollToAnchor(hash);
@@ -83,7 +85,7 @@ export function Nav() {
           {NAV_LINKS.map(({ hash, label }) => (
             <a
               key={hash}
-              href={hash}
+              href={`/${hash}`}
               onClick={onAnchorClick(hash)}
               className="relative no-underline text-inherit transition-colors duration-200 hover:text-mtl-fg after:absolute after:left-0 after:-bottom-1.5 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-mtl-accent after:transition-transform after:duration-300 hover:after:scale-x-100"
             >
@@ -145,7 +147,7 @@ export function Nav() {
           {NAV_LINKS.map(({ hash, label }) => (
             <a
               key={hash}
-              href={hash}
+              href={`/${hash}`}
               onClick={onAnchorClick(hash)}
               className="border-b border-mtl-line py-3.5 text-[13px] uppercase tracking-[0.08em] text-mtl-fg no-underline"
             >

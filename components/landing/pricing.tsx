@@ -1,9 +1,10 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { gsap, useGSAP, SplitText, SCRAMBLE_CHARS } from "@/lib/gsap";
 
-const SIGNUP_URL = "https://app.moneytreeleads.ca/signup";
+const SIGNUP_URL = "https://app.moneytreeleads.ca/sign-up";
 
 const TRUST_BULLETS = [
   "Cancel anytime",
@@ -177,6 +178,14 @@ export function Pricing() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6">
+              <Link
+                href="/pricing"
+                className="mtl-mono text-[12px] tracking-[0.08em] text-mtl-fg-2 transition-colors hover:text-mtl-fg"
+              >
+                Pricing details &amp; FAQ <span className="text-mtl-accent">→</span>
+              </Link>
+            </div>
           </div>
 
           {/* Right: plan card */}
