@@ -16,7 +16,7 @@ const ROWS: CompareRow[] = [
   { label: "Bot/fake filter", portal: "Manual", mtl: "Model auto-rejects" },
   { label: "Outreach", portal: "You write it", mtl: "AI-drafted opener" },
   { label: "Avg. close rate", portal: "4–6%", mtl: "18–22%" },
-  { label: "Monthly cost", portal: "$600+", mtl: "$299" },
+  { label: "Monthly cost", portal: "$600+", mtl: "From $179" },
 ];
 
 export function ComparePanel() {

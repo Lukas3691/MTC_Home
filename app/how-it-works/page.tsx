@@ -153,11 +153,11 @@ export default function HowItWorksPage() {
           <p className="max-w-[680px] text-[14px] leading-[1.6] text-mtl-fg-2 md:text-[15px]">
             Leads scoring below 70 are never delivered. That threshold is why subscribers work a
             short list of warm conversations instead of a long list of dead numbers — and why the
-            engine pairs naturally with a{" "}
+            engine pairs naturally with{" "}
             <Link href="/pricing" className="text-mtl-accent underline-offset-4 hover:underline">
-              flat $299/month plan
-            </Link>{" "}
-            instead of per-lead pricing.
+              tiered plans starting at $179/month
+            </Link>
+            .
           </p>
         </SubpageSection>
 

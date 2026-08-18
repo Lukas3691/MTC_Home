@@ -8,7 +8,7 @@ const PAGE_URL = `${SITE_URL}/vs-portal-leads`;
 export const metadata: Metadata = {
   title: "Portal Leads vs. Money Tree Leads — A Realtor's Comparison",
   description:
-    "Buying real estate leads from listing portals vs. an AI qualification engine: cost ($600+ vs $299/mo), close rates (4–6% vs 18–22%), exclusivity, and qualification, compared side by side.",
+    "Buying real estate leads from listing portals vs. an AI qualification engine: cost ($600+ vs from $179/mo), close rates (4–6% vs 18–22%), exclusivity, and qualification, compared side by side.",
   alternates: { canonical: "/vs-portal-leads" },
   openGraph: {
     title: "Portal Leads vs. Money Tree Leads",
@@ -52,7 +52,7 @@ const ROWS = [
   { label: "Bot/fake filter", portal: "Manual", mtl: "Model auto-rejects" },
   { label: "Outreach", portal: "You write it", mtl: "AI-drafted opener" },
   { label: "Avg. close rate", portal: "4–6%", mtl: "18–22%" },
-  { label: "Monthly cost", portal: "$600+", mtl: "$299" },
+  { label: "Monthly cost", portal: "$600+", mtl: "From $179" },
 ];
 
 export default function VsPortalLeadsPage() {
@@ -160,9 +160,9 @@ export default function VsPortalLeadsPage() {
             <p>
               If you are an individual agent or a small team whose time is the scarce resource,
               paying more per month for colder, shared inquiries is hard to justify — that is the
-              realtor Money Tree Leads is built for, at a flat{" "}
+              realtor Money Tree Leads is built for, starting at{" "}
               <Link href="/pricing" className="text-mtl-accent underline-offset-4 hover:underline">
-                $299/month
+                $179/month
               </Link>
               .
             </p>

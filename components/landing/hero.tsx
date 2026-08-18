@@ -355,7 +355,7 @@ export function Hero() {
                 href={SIGNUP_URL}
                 className="mtl-btn mtl-btn-primary px-5 py-[15px] text-[14px] md:px-6 md:py-[18px] md:text-[16px]"
               >
-                $ start_trial — 299/mo
+                $ start_trial — from 179/mo
               </a>
               <a
                 href="#feed"

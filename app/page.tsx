@@ -30,13 +30,15 @@ const productJsonLd = {
   description:
     "AI-powered lead engine for Canadian realtors. Pre-qualified buyers and sellers, scored 0–100 on intent, financing, and timeline, delivered to your dashboard in real time.",
   offers: {
-    "@type": "Offer",
-    price: "299",
-    priceCurrency: "CAD",
+    "@type": "AggregateOffer",
+    lowPrice: "179",
+    highPrice: "1199",
+    priceCurrency: "USD",
+    offerCount: "4",
     url: "https://app.moneytreeleads.ca/sign-up",
     category: "Monthly subscription",
     description:
-      "One plan. $299/month CAD. First-month refund if you don't close a deal. Cancel any time.",
+      "Four tiers, $179–$1,199/month USD. Dead-number leads refunded within 72h. Cancel any time.",
   },
   publisher: { "@id": `${SITE_URL}/#organization` },
   audience: {
