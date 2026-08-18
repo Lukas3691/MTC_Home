@@ -38,7 +38,7 @@ const productJsonLd = {
     url: "https://app.moneytreeleads.ca/sign-up",
     category: "Monthly subscription",
     description:
-      "Four tiers, $179–$1,199/month USD. Dead-number leads refunded within 72h. Cancel any time.",
+      "Four tiers, $179–$1,199/month USD. Exclusive leads, one agent each. Cancel any time.",
   },
   publisher: { "@id": `${SITE_URL}/#organization` },
   audience: {

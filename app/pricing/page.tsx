@@ -149,7 +149,7 @@ export default function PricingPage() {
         <SubpageSection heading="Guarantee and terms">
           <ul className="m-0 flex max-w-[680px] list-none flex-col gap-3 p-0">
             {[
-              ["Dead-number refunds", "Report a lead with a dead or disconnected number within 72 hours of receiving it, and the credits are returned automatically."],
+              ["Exclusive leads", "Every qualified lead is routed to exactly one realtor — never shared or resold."],
               ["Cancel anytime", "Month-to-month billing. No annual contract, no cancellation fee."],
               ["SOC-2 · PIPEDA compliant", "Lead data is handled to Canadian privacy standards — details in the privacy policy."],
             ].map(([label, desc]) => (
@@ -177,13 +177,6 @@ export default function PricingPage() {
             <p>
               No. Every tier is month-to-month and you can cancel any time from the
               dashboard.
-            </p>
-          </QA>
-          <QA q="What if a lead has a bad number?">
-            <p>
-              Report it within 72 hours of receiving it and the credits are refunded automatically
-              once we confirm the number is dead or disconnected — the only ground for a refund,
-              detailed in the terms of service.
             </p>
           </QA>
           <QA q="Do all tiers have a setup fee?">

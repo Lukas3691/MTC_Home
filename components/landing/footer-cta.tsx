@@ -111,7 +111,7 @@ export function FooterCTA() {
           </h2>
 
           <p className="text-[16px] md:text-[19px] text-mtl-fg-2 leading-[1.4] max-w-[560px] mb-7 md:mb-9">
-            From $179/month USD. Dead-number leads refunded within 72h. Cancel any time.
+            From $179/month USD. Exclusive leads, one agent each. Cancel any time.
           </p>
 
           <div className="flex flex-wrap gap-3">

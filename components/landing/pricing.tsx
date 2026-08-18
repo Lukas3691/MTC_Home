@@ -7,7 +7,7 @@ import { TierCards } from "@/components/landing/tier-cards";
 
 const TRUST_BULLETS = [
   "Cancel anytime",
-  "Dead-number leads refunded within 72h",
+  "Exclusive — one agent per lead",
   "SOC-2 · PIPEDA compliant",
 ];
 
