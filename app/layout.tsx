@@ -1,25 +1,33 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, Manrope, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const SITE_URL = "https://www.moneytreeleads.ca";
 
-const spaceGrotesk = Space_Grotesk({
+// The files live in the repo because next/font/google downloads them during
+// the build, and Turbopack fails the whole build when Google's stylesheet
+// hands back a font link containing "&". They are the variable fonts from
+// github.com/google/fonts, cut to Google's latin, latin-ext and vietnamese
+// ranges with pyftsubset; other scripts fall back to the system font. Keep
+// them cut to the layout features Google serves (calt, ccmp, dnom, frac, kern,
+// liga, locl, mark, mkmk, numr, pnum, tnum, rvrn): globals.css asks for "ss01",
+// which Google's files don't have, so a file carrying it changes letter shapes.
+const spaceGrotesk = localFont({
+  src: "./fonts/space-grotesk.woff2",
   variable: "--font-space-grotesk",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "400 700",
 });
 
-const manrope = Manrope({
+const manrope = localFont({
+  src: "./fonts/manrope.woff2",
   variable: "--font-manrope",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "300 700",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const jetbrainsMono = localFont({
+  src: "./fonts/jetbrains-mono.woff2",
   variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "400 700",
 });
 
 export const metadata: Metadata = {
