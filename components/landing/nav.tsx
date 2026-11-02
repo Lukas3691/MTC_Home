@@ -73,7 +73,7 @@ export function Nav() {
       >
         {/* left: logo */}
         <div className="flex items-center gap-3 md:gap-5">
-          <Logo size="sm" />
+          <Logo size="sm" markOnlyOnPhones />
         </div>
 
         {/* center: section anchors (desktop only) */}
@@ -92,17 +92,26 @@ export function Nav() {
 
         {/* right: login + CTA (+ hamburger on mobile) */}
         <div className="flex items-center gap-2 md:gap-2.5">
+          {/* Log in is a button at every width, and on mobile it sits beside
+              the CTA rather than inside the hamburger, so returning customers
+              can find their way back without opening the menu. */}
           <a
             href={LOGIN_URL}
-            className="hidden md:inline-block mr-1.5 text-[12px] lowercase tracking-[0.06em] text-mtl-fg-2 transition-colors duration-200 hover:text-mtl-fg"
+            className="mtl-btn mtl-btn-ghost hidden md:inline-flex px-[18px] py-3 text-[13px]"
           >
-            login
+            Log in
           </a>
           <a
             href={SIGNUP_URL}
             className="mtl-btn mtl-btn-primary hidden md:inline-flex px-[18px] py-3 text-[13px]"
           >
             $ subscribe
+          </a>
+          <a
+            href={LOGIN_URL}
+            className="mtl-btn mtl-btn-ghost md:hidden px-3.5 py-[9px] text-[12px]"
+          >
+            Log in
           </a>
           <a
             href={SIGNUP_URL}
@@ -151,9 +160,9 @@ export function Nav() {
           ))}
           <a
             href={LOGIN_URL}
-            className="py-3.5 text-[13px] lowercase tracking-[0.08em] text-mtl-fg-2 no-underline transition-colors duration-200 hover:text-mtl-fg"
+            className="py-3.5 text-[13px] uppercase tracking-[0.08em] text-mtl-fg-2 no-underline transition-colors duration-200 hover:text-mtl-fg"
           >
-            login
+            Log in
           </a>
         </div>
       )}

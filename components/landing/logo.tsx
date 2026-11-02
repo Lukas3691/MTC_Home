@@ -43,12 +43,19 @@ export function LogoMark({ size = 26 }: { size?: number }) {
   );
 }
 
-export function Logo({ size = "sm" }: { size?: "sm" | "lg" }) {
+export function Logo({
+  size = "sm",
+  markOnlyOnPhones = false,
+}: {
+  size?: "sm" | "lg";
+  /** Below 420px show just the mark, for bars with no room for the wordmark. */
+  markOnlyOnPhones?: boolean;
+}) {
   const dim = size === "lg" ? 44 : 26;
   return (
     <Link href="/" className={`mtl-logo mtl-logo-${size}`} aria-label="Money Tree Leads — home">
       <LogoMark size={dim} />
-      <span className="mtl-logo-type">
+      <span className={`mtl-logo-type${markOnlyOnPhones ? " max-[419px]:hidden" : ""}`}>
         MoneyTree<span className="dot">·</span>Leads
       </span>
     </Link>
