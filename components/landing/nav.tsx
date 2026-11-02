@@ -7,7 +7,6 @@ import { Logo } from "@/components/landing/logo";
 const NAV_LINKS = [
   { hash: "#feed", label: "/feed" },
   { hash: "#engine", label: "/engine" },
-  { hash: "#proof", label: "/proof" },
   { hash: "#pricing", label: "/pricing" },
 ] as const;
 
@@ -72,12 +71,9 @@ export function Nav() {
         ref={innerRef}
         className="flex items-center justify-between px-5 py-3.5 md:px-10 md:py-[18px]"
       >
-        {/* left: logo + version chip */}
+        {/* left: logo */}
         <div className="flex items-center gap-3 md:gap-5">
           <Logo size="sm" />
-          <span className="hidden md:inline-block border-l border-mtl-line pl-3.5 text-[11px] tracking-[0.16em] text-mtl-fg-3">
-            v4.2 · LIVE
-          </span>
         </div>
 
         {/* center: section anchors (desktop only) */}
@@ -94,9 +90,8 @@ export function Nav() {
           ))}
         </div>
 
-        {/* right: status + login + CTA (+ hamburger on mobile) */}
+        {/* right: login + CTA (+ hamburger on mobile) */}
         <div className="flex items-center gap-2 md:gap-2.5">
-          <span className="mtl-status mr-2 hidden lg:inline-flex">147 leads today</span>
           <a
             href={LOGIN_URL}
             className="hidden md:inline-block mr-1.5 text-[12px] lowercase tracking-[0.06em] text-mtl-fg-2 transition-colors duration-200 hover:text-mtl-fg"

@@ -1,29 +1,33 @@
 # Money Tree Leads
 
-> AI-powered lead engine for Canadian realtors. Pre-qualified home buyer and seller leads, scored 0–100 on intent, financing, and timeline, delivered to the realtor's dashboard in real time. One plan: $299/month CAD, first-month refund if you don't close a deal, cancel any time.
+> AI-powered lead engine for Canadian realtors. An AI assistant calls each enquiry from ad campaigns and scores the conversation 0–100 on timeline, budget, and motivation. Each lead goes to one agent, with the summary, transcript, and recording. Four plans, $179–$1,199/month USD, cancel any time.
 
-Money Tree Leads (legal entity: Money Tree Conversions, Edmonton, Alberta, Canada) helps real estate agents replace cold prospecting with a live stream of warm, pre-qualified leads.
+Money Tree Leads (legal entity: Money Tree Conversions, Edmonton, Alberta, Canada) sells exclusive real estate leads to agents in Canada.
 
 ## Key facts
 
 - Audience: real estate agents and realtors in Canada
-- What it does: generates and qualifies buyer/seller leads using AI, scoring each lead 0–100 on intent, financing readiness, and purchase timeline
-- Delivery: leads stream into a web dashboard the moment they are qualified
-- Pricing: single plan, $299/month CAD — no tiers, no contracts
-- Guarantee: first-month refund if the realtor doesn't close a deal
+- Lead source: ad campaigns and enquiry forms, with consent to be contacted
+- Qualification: an AI assistant phones during business hours, tries up to 3 times over about two days, and may follow up by text; calls are recorded
+- Score: 0–100 from the conversation (hot 70+, warm 40–69, cool under 40). A lead nobody could reach is marked cold and only appears in the lead feed
+- Exclusivity: each lead goes to one agent, matched by service area, price range, and language; higher plans get priority
+- What the agent receives: name, phone, email, language, area, AI summary, score, call transcript, and recording
+- Lead volume: no set number of leads per month is promised; delivery depends on the enquiries that come in
+- Also included: an AI phone assistant on the agent's own number, and a calendar
+- Pricing: Bronze $179/month (pay per lead), Silver $499/month + $250 setup, Gold $699/month + $200 setup, Platinum $1,199/month; all USD
 - Cancellation: cancel any time
-- Sign up: https://app.moneytreeleads.ca/signup
-- Log in: https://app.moneytreeleads.ca/login
+- Sign up: https://app.moneytreeleads.ca/sign-up
+- Log in: https://app.moneytreeleads.ca/sign-in
 
 ## How it differs from portal leads
 
-Unlike leads bought from real estate portals — which are often cold, shared between multiple agents, and unvetted — Money Tree Leads delivers exclusive leads that are pre-qualified before they reach the agent, so conversations start warm.
+Leads bought from real estate portals are often form submissions shared between several agents. With Money Tree Leads, an AI assistant speaks with the person first and each lead goes to one agent.
 
 ## Pages
 
-- [Home](https://www.moneytreeleads.ca/): product overview, live lead feed demo, pricing
-- [How It Works](https://www.moneytreeleads.ca/how-it-works): the five-stage AI qualification engine — intent capture (~12,400 signals/day), bot filtering, 23-signal enrichment, MTL Score 0–100 (model trained on 4.1M closed transactions, 70+ delivery threshold), realtor matching in under 4 seconds
-- [Pricing](https://www.moneytreeleads.ca/pricing): one plan, $299/month CAD, up to 80 pre-qualified leads/month, full feature list, guarantee and terms, cost comparison vs. portal leads
-- [Vs. Portal Leads](https://www.moneytreeleads.ca/vs-portal-leads): side-by-side comparison — portal leads ($600+/mo, shared, form-only, 4–6% close) vs. Money Tree Leads ($299/mo, exclusive, AI-qualified, 18–22% close)
+- [Home](https://www.moneytreeleads.ca/): product overview, a sample lead view with invented data, pricing
+- [How It Works](https://www.moneytreeleads.ca/how-it-works): the five stages (intake, number check, AI call, score, route to one agent)
+- [Pricing](https://www.moneytreeleads.ca/pricing): the four plans and their terms in plain language
+- [Vs. Portal Leads](https://www.moneytreeleads.ca/vs-portal-leads): side-by-side comparison with portal leads
 - [Privacy Policy](https://www.moneytreeleads.ca/privacy): how personal information is collected, used, and protected
 - [Terms of Service](https://www.moneytreeleads.ca/terms): terms governing use of the service

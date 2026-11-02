@@ -64,9 +64,9 @@ export default function PricingPage() {
         }
         lede={
           <>
-            No annual contract, no per-lead surprises. Every Money Tree Leads tier is billed
-            monthly in USD, includes phone-verified and AI-qualified leads delivered exclusively
-            to you, and can be cancelled any time.
+            No annual contract. Every Money Tree Leads tier is billed monthly in USD and can be
+            cancelled any time. Each lead goes to one agent. We don&apos;t promise a set number of
+            leads per month, because they arrive as they are qualified and matched to you.
           </>
         }
       >
@@ -78,18 +78,16 @@ export default function PricingPage() {
           </p>
         </SubpageSection>
 
-        <SubpageSection heading="What real estate leads cost in Canada">
+        <SubpageSection heading="What you get compared with portal leads">
           <p className="mb-5 max-w-[680px] text-[14px] leading-[1.6] text-mtl-fg-2 md:text-[15px]">
-            Most Canadian realtors who buy portal leads pay <strong className="text-mtl-fg">$600 or
-            more per month</strong> for form-fill inquiries that are typically shared between
-            agents and close at around 4–6%. Money Tree Leads starts at{" "}
-            <strong className="text-mtl-fg">$179/month USD</strong> for leads that are
-            pre-qualified before delivery — subscribers typically see close rates of 18–22%.
+            Portal leads are typically form-fill inquiries, often shared between agents. Money Tree
+            Leads starts at <strong className="text-mtl-fg">$179/month USD</strong>, and our AI
+            assistant speaks with each qualified lead before you receive it.
           </p>
           <div className="max-w-[680px] overflow-hidden rounded-[18px] border border-mtl-line">
             <table className="w-full border-collapse text-left">
               <caption className="sr-only">
-                Cost and conversion comparison: portal leads versus Money Tree Leads
+                Comparison: portal leads versus Money Tree Leads
               </caption>
               <thead>
                 <tr className="mtl-mono bg-mtl-bg-3 text-[11px] uppercase tracking-[0.14em]">
@@ -105,37 +103,32 @@ export default function PricingPage() {
               <tbody className="text-[14px]">
                 <tr className="border-t border-mtl-line">
                   <th scope="row" className="px-5 py-4 font-medium text-mtl-fg-2">
-                    Monthly cost
-                  </th>
-                  <td className="mtl-mono px-5 py-4 text-mtl-fg-3">$600+</td>
-                  <td className="mtl-mono px-5 py-4 font-semibold text-mtl-fg">From $179</td>
-                </tr>
-                <tr className="border-t border-mtl-line">
-                  <th scope="row" className="px-5 py-4 font-medium text-mtl-fg-2">
-                    Avg. close rate
-                  </th>
-                  <td className="mtl-mono px-5 py-4 text-mtl-fg-3">4–6%</td>
-                  <td className="mtl-mono px-5 py-4 font-semibold text-mtl-fg">18–22%</td>
-                </tr>
-                <tr className="border-t border-mtl-line">
-                  <th scope="row" className="px-5 py-4 font-medium text-mtl-fg-2">
                     Qualification
                   </th>
-                  <td className="mtl-mono px-5 py-4 text-mtl-fg-3">Form-only</td>
-                  <td className="mtl-mono px-5 py-4 font-semibold text-mtl-fg">23-signal MTL Score</td>
+                  <td className="mtl-mono px-5 py-4 text-mtl-fg-3">Form only</td>
+                  <td className="mtl-mono px-5 py-4 font-semibold text-mtl-fg">
+                    Scored from a conversation
+                  </td>
+                </tr>
+                <tr className="border-t border-mtl-line">
+                  <th scope="row" className="px-5 py-4 font-medium text-mtl-fg-2">
+                    Who gets the lead
+                  </th>
+                  <td className="mtl-mono px-5 py-4 text-mtl-fg-3">Often several agents</td>
+                  <td className="mtl-mono px-5 py-4 font-semibold text-mtl-fg">One agent</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="mt-5 max-w-[680px] text-[14px] leading-[1.6] text-mtl-fg-2 md:text-[15px]">
-            The full feature-by-feature breakdown lives on the{" "}
+            The full breakdown lives on the{" "}
             <Link
               href="/vs-portal-leads"
               className="text-mtl-accent underline-offset-4 hover:underline"
             >
               portal leads comparison page
             </Link>
-            , and the qualification pipeline behind the close-rate difference is explained in{" "}
+            , and the qualification process is explained in{" "}
             <Link
               href="/how-it-works"
               className="text-mtl-accent underline-offset-4 hover:underline"
@@ -146,12 +139,13 @@ export default function PricingPage() {
           </p>
         </SubpageSection>
 
-        <SubpageSection heading="Guarantee and terms">
+        <SubpageSection heading="Terms in plain language">
           <ul className="m-0 flex max-w-[680px] list-none flex-col gap-3 p-0">
             {[
-              ["Exclusive leads", "Every qualified lead is routed to exactly one realtor — never shared or resold."],
+              ["Exclusive leads", "Each lead goes to one realtor."],
+              ["No set lead count", "Leads depend on the enquiries that come in for your area, so we don't promise a monthly number."],
               ["Cancel anytime", "Month-to-month billing. No annual contract, no cancellation fee."],
-              ["SOC-2 · PIPEDA compliant", "Lead data is handled to Canadian privacy standards — details in the privacy policy."],
+              ["Your data", "How we handle personal information is set out in our privacy policy."],
             ].map(([label, desc]) => (
               <li key={label} className="flex gap-3 text-[14px] leading-[1.6] text-mtl-fg-2">
                 <span className="mtl-mono mt-[2px] text-mtl-accent" aria-hidden>
@@ -166,11 +160,18 @@ export default function PricingPage() {
         </SubpageSection>
 
         <SubpageSection heading="Pricing questions">
-          <QA q="How much do real estate leads cost in Canada?">
+          <QA q="How much does Money Tree Leads cost?">
             <p>
-              Purchased portal leads commonly run $600+ per month for shared inquiries. Money Tree
-              Leads starts at $179/month USD for exclusive, pre-qualified leads, with tiers up to
-              $1,199/month for higher volume and unlimited assistant talk &amp; text.
+              Plans run from $179/month USD to $1,199/month USD. Bronze is pay-per-lead. Silver,
+              Gold, and Platinum include leads as they become available, with higher plans getting
+              priority. Platinum also includes unlimited assistant talk &amp; text.
+            </p>
+          </QA>
+          <QA q="How many leads will I get?">
+            <p>
+              We don&apos;t promise a set number per month. Leads depend on the enquiries that come
+              in, the conversations our assistant has with them, and how well they match your
+              service area, price range, and languages.
             </p>
           </QA>
           <QA q="Is there a contract or minimum term?">

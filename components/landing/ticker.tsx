@@ -4,12 +4,12 @@ import { useRef } from "react";
 import { gsap, useGSAP } from "@/lib/gsap";
 
 const ITEMS = [
-  "LIVE — Toronto buyer · $1.2M · score 94",
-  "LIVE — Cash investor · Vancouver · score 97",
-  "LIVE — Pre-approved · Calgary · score 88",
-  "LIVE — Seller · Montreal · listing Q1",
-  "LIVE — Cash · Ottawa · score 91",
-  "LIVE — Pre-approved · Halifax · score 83",
+  "Enquiry comes in from an ad",
+  "Phone number checked",
+  "AI assistant calls",
+  "Conversation scored 0–100",
+  "Matched to one agent",
+  "Summary, transcript, recording delivered",
 ];
 
 function Row({ ariaHidden = false }: { ariaHidden?: boolean }) {
@@ -72,7 +72,7 @@ export function TickerBand() {
       ref={sectionRef}
       tabIndex={0}
       className="relative z-[1] overflow-hidden border-y border-mtl-line bg-mtl-bg-2 py-[18px] focus-visible:outline-2 focus-visible:outline-mtl-accent"
-      aria-label="Live lead activity ticker — focus or hover to pause"
+      aria-label="How a lead reaches you — focus or hover to pause"
     >
       <div ref={trackRef} className="flex w-max">
         <Row />

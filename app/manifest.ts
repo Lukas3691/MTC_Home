@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Money Tree Leads",
     short_name: "Money Tree",
     description:
-      "AI-powered lead engine for Canadian realtors. Pre-qualified buyers and sellers, scored on intent, financing, and timeline.",
+      "AI-powered lead engine for Canadian realtors. Our AI assistant calls each enquiry and scores the conversation.",
     start_url: "/",
     display: "browser",
     background_color: "#0a0a0a",
