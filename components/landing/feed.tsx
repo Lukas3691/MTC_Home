@@ -7,7 +7,7 @@ interface Lead {
   id: number;
   time: string;
   area: string;
-  type: string;
+  intent: string;
   budget: string;
   score: number;
   status: string;
@@ -16,11 +16,11 @@ interface Lead {
 
 /** Invented examples of the fields a lead carries. Not real people or live data. */
 const SAMPLE_LEADS: Lead[] = [
-  { id: 0, time: "MON 10:14", area: "EDMONTON, AB", type: "BUYER", budget: "$450–500k", score: 88, status: "WITHIN 3 MONTHS", name: "Sample A." },
-  { id: 1, time: "MON 11:32", area: "CALGARY, AB", type: "SELLER", budget: "$600k", score: 74, status: "THIS SPRING", name: "Sample B." },
-  { id: 2, time: "MON 15:47", area: "TORONTO, ON", type: "BUYER", budget: "$800–900k", score: 62, status: "WITHIN 6 MONTHS", name: "Sample C." },
-  { id: 3, time: "TUE 09:21", area: "VANCOUVER, BC", type: "BUYER", budget: "$1.1M", score: 45, status: "NEXT YEAR", name: "Sample D." },
-  { id: 4, time: "TUE 13:05", area: "OTTAWA, ON", type: "SELLER", budget: "NOT SHARED", score: 31, status: "UNDECIDED", name: "Sample E." },
+  { id: 0, time: "MON 10:14", area: "EDMONTON, AB", intent: "BUYING", budget: "$450–500k", score: 88, status: "WITHIN 3 MONTHS", name: "Sample A." },
+  { id: 1, time: "MON 11:32", area: "CALGARY, AB", intent: "SELLING", budget: "$600k", score: 74, status: "THIS SPRING", name: "Sample B." },
+  { id: 2, time: "MON 15:47", area: "TORONTO, ON", intent: "BUYING", budget: "$800–900k", score: 62, status: "WITHIN 6 MONTHS", name: "Sample C." },
+  { id: 3, time: "TUE 09:21", area: "VANCOUVER, BC", intent: "BUYING", budget: "$1.1M", score: 45, status: "NEXT YEAR", name: "Sample D." },
+  { id: 4, time: "TUE 13:05", area: "OTTAWA, ON", intent: "SELLING", budget: "NOT SHARED", score: 31, status: "UNDECIDED", name: "Sample E." },
 ];
 
 function temperatureFor(score: number): string {
@@ -174,10 +174,10 @@ export function FeedSection() {
                     <span className="md:hidden"> · {row.budget}</span>
                   </div>
                   <div className="mt-0.5 text-[9px] tracking-[0.08em] text-mtl-fg-3 md:hidden">
-                    {row.type} · {row.status}
+                    {row.intent} · {row.status}
                   </div>
                 </div>
-                <div className="hidden text-mtl-fg-2 lg:block">{row.type}</div>
+                <div className="hidden text-mtl-fg-2 lg:block">{row.intent}</div>
                 <div className="hidden text-mtl-fg md:block">{row.budget}</div>
                 <div className="hidden text-[10px] tracking-[0.08em] text-mtl-fg-2 md:block">
                   {row.status}
