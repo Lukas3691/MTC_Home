@@ -1,8 +1,9 @@
 /**
  * Tier data mirrors the app's live pricing config (Money_Tree_Leads_V2's
  * src/lib/domain/tiers.ts) as of the four-tier launch. There is no shared
- * package between the two repos, so if prices or quotas change there, this
- * needs updating by hand to match.
+ * package between the two repos, so if prices change there, this needs
+ * updating by hand to match. Monthly lead numbers stay off this page on
+ * purpose: delivery depends on enquiries, so none is promised.
  */
 
 const SIGNUP_URL = "https://app.moneytreeleads.ca/sign-up";
@@ -35,7 +36,7 @@ export const TIERS: Tier[] = [
     price: 499,
     setupFee: 250,
     highlights: [
-      "10 qualified leads / month",
+      "Included leads as they become available",
       "50 min + 100 SMS included",
       "Transcript & recording with every lead",
       "AI phone assistant on your own number",
@@ -48,7 +49,7 @@ export const TIERS: Tier[] = [
     setupFee: 200,
     popular: true,
     highlights: [
-      "15 qualified leads / month",
+      "Included leads, priority over Silver",
       "100 min + 200 SMS included",
       "Transcript & recording with every lead",
       "AI phone assistant on your own number",
@@ -60,7 +61,7 @@ export const TIERS: Tier[] = [
     price: 1199,
     setupFee: 0,
     highlights: [
-      "20 qualified leads / month",
+      "Included leads, highest priority",
       "Unlimited assistant talk & text",
       "Transcript & recording with every lead",
       "AI phone assistant included, free",

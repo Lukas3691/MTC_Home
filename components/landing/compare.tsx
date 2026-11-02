@@ -11,12 +11,11 @@ type CompareRow = {
 };
 
 const ROWS: CompareRow[] = [
-  { label: "Lead source", portal: "Cold portal scrape", mtl: "AI-driven intent capture" },
-  { label: "Qualification", portal: "Form-only", mtl: "23-signal MTL Score" },
-  { label: "Bot/fake filter", portal: "Manual", mtl: "Model auto-rejects" },
-  { label: "Outreach", portal: "You write it", mtl: "AI-drafted opener" },
-  { label: "Avg. close rate", portal: "4–6%", mtl: "18–22%" },
-  { label: "Monthly cost", portal: "$600+", mtl: "From $179" },
+  { label: "First contact", portal: "You chase the form", mtl: "AI assistant calls first" },
+  { label: "Qualification", portal: "Form only", mtl: "Scored from a conversation" },
+  { label: "Who gets the lead", portal: "Often several agents", mtl: "One agent" },
+  { label: "What you receive", portal: "Name and number", mtl: "Summary, transcript, recording" },
+  { label: "Follow-up", portal: "All on you", mtl: "Retries and text follow-up" },
 ];
 
 export function ComparePanel() {

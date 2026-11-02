@@ -32,9 +32,9 @@ const jetbrainsMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Money Tree Leads — Pre-Qualified Real Estate Leads, Streaming In",
+  title: "Money Tree Leads — Pre-Qualified Real Estate Leads for Canadian Realtors",
   description:
-    "AI-powered lead engine for Canadian realtors. Pre-qualified buyers and sellers, scored 0–100 on intent, financing, and timeline — delivered to your dashboard the second they exist. Plans from $179/mo USD.",
+    "AI-powered lead engine for Canadian realtors. Our AI assistant calls each enquiry, scores the conversation 0–100, and sends each qualified lead to one agent with the summary, transcript, and recording. Plans from $179/mo USD.",
   applicationName: "Money Tree Leads",
   category: "Real Estate Lead Generation",
   keywords: [

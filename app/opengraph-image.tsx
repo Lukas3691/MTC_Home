@@ -75,7 +75,7 @@ export default function OpenGraphImage() {
               letterSpacing: "-0.04em",
             }}
           >
-            Watch warm ones stream in.
+            Get the ones who picked up.
           </div>
         </div>
 

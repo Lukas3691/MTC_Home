@@ -8,7 +8,6 @@ import { TierCards } from "@/components/landing/tier-cards";
 const TRUST_BULLETS = [
   "Cancel anytime",
   "Exclusive — one agent per lead",
-  "SOC-2 · PIPEDA compliant",
 ];
 
 export function Pricing() {
@@ -114,8 +113,8 @@ export function Pricing() {
             <span className="text-mtl-accent">Pick where you start.</span>
           </h2>
           <p data-reveal className="mb-5 text-[15px] leading-[1.5] text-mtl-fg-2 md:text-[17px]">
-            Every tier is phone-verified, AI-qualified, and delivered exclusively to you. Start at
-            $179/mo, upgrade as your pipeline grows.
+            Each lead goes to one agent. Leads arrive as they are qualified and matched to you, so
+            we don&apos;t promise a set number per month. Plans start at $179/mo USD.
           </p>
           <ul className="m-0 flex list-none flex-col gap-[10px] p-0">
             {TRUST_BULLETS.map((x) => (

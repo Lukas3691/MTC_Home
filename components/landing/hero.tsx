@@ -6,6 +6,13 @@ import { gsap, useGSAP, SplitText, SCRAMBLE_CHARS, scrollToAnchor } from "@/lib/
 const SIGNUP_URL = "https://app.moneytreeleads.ca/sign-up";
 const PILL_TEXT = "$ ./qualified --realtor";
 
+/** What the product does by design. Not performance figures. */
+const HERO_FACTS = [
+  { value: "1", label: "agent per lead" },
+  { value: "0–100", label: "score from the call" },
+  { value: "$179", label: "plans from, USD/mo" },
+];
+
 /* ── neon money-tree image sequence ── */
 const FRAME_COUNT = 160;
 /** The first ~20 frames are a near-static stump — skip them so growth is visible on the very first scroll. */
@@ -30,9 +37,6 @@ export function Hero() {
   const paraRef = useRef<HTMLParagraphElement>(null);
   const ctaRowRef = useRef<HTMLDivElement>(null);
   const statPanelRef = useRef<HTMLDivElement>(null);
-  const statXRef = useRef<HTMLDivElement>(null);
-  const statDRef = useRef<HTMLDivElement>(null);
-  const statZeroRef = useRef<HTMLDivElement>(null);
 
   /** Latest frame index the scroll scrub wants on screen. */
   const targetFrameRef = useRef(START_FRAME);
@@ -157,13 +161,7 @@ export function Hero() {
       const para = paraRef.current;
       const ctaRow = ctaRowRef.current;
       const panel = statPanelRef.current;
-      const statX = statXRef.current;
-      const statD = statDRef.current;
-      const statZero = statZeroRef.current;
-      if (
-        !section || !canvas || !glow || !pill || !heading ||
-        !para || !ctaRow || !panel || !statX || !statD || !statZero
-      ) {
+      if (!section || !canvas || !glow || !pill || !heading || !para || !ctaRow || !panel) {
         return;
       }
 
@@ -203,11 +201,9 @@ export function Hero() {
           { opacity: 0.95, duration: 4, ease: "sine.inOut", yoyo: true, repeat: -1 },
         );
 
-        /* ── load choreography: pill → headline → strike → copy/CTAs → stats ── */
+        /* ── load choreography: pill → headline → strike → copy/CTAs → facts ── */
         gsap.set(pill, { autoAlpha: 0 });
         gsap.set([para, ctaRow, panel], { autoAlpha: 0, y: 28 });
-        statX.textContent = "0.0×";
-        statD.textContent = "0d";
 
         let headlinePlayed = false;
         SplitText.create(heading, {
@@ -245,37 +241,6 @@ export function Hero() {
         );
         tl.to(panel, { autoAlpha: 1, y: 0, duration: 0.9, ease: "power3.out" }, 1.55);
 
-        const closeRate = { v: 0 };
-        tl.to(
-          closeRate,
-          {
-            v: 3.2,
-            duration: 1.6,
-            ease: "power2.out",
-            onUpdate: () => {
-              statX.textContent = `${closeRate.v.toFixed(1)}×`;
-            },
-          },
-          1.7,
-        );
-        const days = { v: 0 };
-        tl.to(
-          days,
-          {
-            v: 28,
-            duration: 1.6,
-            ease: "power2.out",
-            onUpdate: () => {
-              statD.textContent = `${Math.round(days.v)}d`;
-            },
-          },
-          1.7,
-        );
-        tl.to(
-          statZero,
-          { duration: 0.6, scrambleText: { text: "$0", chars: SCRAMBLE_CHARS, speed: 0.4 } },
-          1.7,
-        );
       });
     },
     { scope: sectionRef },
@@ -334,9 +299,9 @@ export function Hero() {
             />
           </span>
           <br />
-          Watch warm ones
+          Get the ones
           <br />
-          <span className="text-mtl-accent">stream in.</span>
+          <span className="text-mtl-accent">who picked up.</span>
         </h1>
 
         <div className="grid max-w-[1200px] items-start gap-7 md:grid-cols-2 md:gap-14">
@@ -345,9 +310,9 @@ export function Hero() {
               ref={paraRef}
               className="mb-7 text-[16px] leading-[1.5] text-mtl-fg-2 md:text-[19px]"
             >
-              Money Tree Leads is an AI-powered lead engine for realtors. Pre-qualified buyers and
-              sellers, scored 0–100 on intent, financing, and timeline — delivered to your
-              dashboard the second they exist.
+              Money Tree Leads is an AI-powered lead engine for realtors. Our AI assistant calls
+              each enquiry from our ad campaigns and scores the conversation 0–100. Each qualified
+              lead goes to one agent, with the summary, transcript, and recording.
             </p>
 
             <div ref={ctaRowRef} className="mb-8 flex flex-wrap gap-3 md:mb-10">
@@ -355,7 +320,7 @@ export function Hero() {
                 href={SIGNUP_URL}
                 className="mtl-btn mtl-btn-primary px-5 py-[15px] text-[14px] md:px-6 md:py-[18px] md:text-[16px]"
               >
-                $ start_trial — from 179/mo
+                $ subscribe — from 179/mo
               </a>
               <a
                 href="#feed"
@@ -365,7 +330,7 @@ export function Hero() {
                 }}
                 className="mtl-btn mtl-btn-ghost px-[18px] py-[15px] text-[14px] md:px-[22px] md:py-[18px] md:text-[16px]"
               >
-                Watch the feed →
+                See a sample lead →
               </a>
             </div>
           </div>
@@ -374,30 +339,17 @@ export function Hero() {
             ref={statPanelRef}
             className="grid grid-cols-3 self-stretch overflow-hidden rounded-[14px] border border-mtl-line bg-[color-mix(in_oklab,var(--mtl-bg)_70%,transparent)] backdrop-blur-[8px] md:self-end"
           >
-            <div className="px-3 py-3.5 md:px-5 md:py-[18px]">
-              <div ref={statXRef} className="mtl-num text-[24px] md:text-[36px]">
-                3.2×
+            {HERO_FACTS.map((fact, i) => (
+              <div
+                key={fact.label}
+                className={`px-3 py-3.5 md:px-5 md:py-[18px] ${i === 0 ? "" : "border-l border-mtl-line"}`}
+              >
+                <div className="mtl-num text-[24px] md:text-[36px]">{fact.value}</div>
+                <div className="mtl-mono mt-1.5 text-[9px] tracking-[0.14em] text-mtl-fg-3 uppercase md:text-[10px]">
+                  {fact.label}
+                </div>
               </div>
-              <div className="mtl-mono mt-1.5 text-[9px] tracking-[0.14em] text-mtl-fg-3 uppercase md:text-[10px]">
-                close rate vs. portal
-              </div>
-            </div>
-            <div className="border-l border-mtl-line px-3 py-3.5 md:px-5 md:py-[18px]">
-              <div ref={statDRef} className="mtl-num text-[24px] md:text-[36px]">
-                28d
-              </div>
-              <div className="mtl-mono mt-1.5 text-[9px] tracking-[0.14em] text-mtl-fg-3 uppercase md:text-[10px]">
-                lead → signed
-              </div>
-            </div>
-            <div className="border-l border-mtl-line px-3 py-3.5 md:px-5 md:py-[18px]">
-              <div ref={statZeroRef} className="mtl-num text-[24px] md:text-[36px]">
-                $0
-              </div>
-              <div className="mtl-mono mt-1.5 text-[9px] tracking-[0.14em] text-mtl-fg-3 uppercase md:text-[10px]">
-                wasted spend
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

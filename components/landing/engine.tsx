@@ -8,59 +8,40 @@ type Stage = {
   k: string;
   t: string;
   d: string;
-  /** Rendered (final) number text — also the SSR fallback. */
-  num: string;
-  /** Static suffix after the counting number ("" when none). */
-  suffix: string;
-  /** Counter end value; null → no count (fades with the card). */
-  end: number | null;
-  format?: (v: number) => string;
+  /** Short plain-language tag at the foot of the card. */
+  tag: string;
 };
 
 const STAGES: Stage[] = [
   {
-    k: "INGEST",
-    t: "Intent capture",
-    d: "Cross-platform ads + partner sites pull every active home shopper in your territory.",
-    num: "12,400",
-    suffix: " / day",
-    end: 12400,
-    format: (v) => Math.round(v).toLocaleString("en-CA"),
+    k: "INTAKE",
+    t: "Enquiry",
+    d: "People respond to our ad campaigns and enquiry forms, and agree to be contacted.",
+    tag: "With consent",
   },
   {
-    k: "CLASSIFY",
-    t: "Bot / spam filter",
-    d: "Model rejects fake submissions, duplicates, and 30+ low-intent patterns instantly.",
-    num: "89%",
-    suffix: " kept",
-    end: 89,
-    format: (v) => `${Math.round(v)}%`,
+    k: "CHECK",
+    t: "Number check",
+    d: "Disconnected numbers and anyone on our do-not-contact list are removed before a call is placed.",
+    tag: "Before dialling",
   },
   {
-    k: "ENRICH",
-    t: "Data enrichment",
-    d: "Mortgage status, employer signal, listing history, and household composition pulled.",
-    num: "23",
-    suffix: " signals",
-    end: 23,
-    format: (v) => `${Math.round(v)}`,
+    k: "CALL",
+    t: "AI assistant calls",
+    d: "The assistant calls during calling hours, tries again if nobody answers, and follows up by text.",
+    tag: "Call + text",
   },
   {
     k: "SCORE",
-    t: "MTL Score 0–100",
-    d: "Trained on 4.1M closed transactions. Anything below 70 never reaches you.",
-    num: "70+",
-    suffix: " threshold",
-    end: 70,
-    format: (v) => `${Math.round(v)}+`,
+    t: "Score 0–100",
+    d: "Each conversation is scored on timeline, budget, and motivation. People who decline an agent or already have one are screened out.",
+    tag: "From the call",
   },
   {
     k: "ROUTE",
-    t: "Realtor match",
-    d: "Geographic, price-band, and specialty match. You get the leads built for you.",
-    num: "< 4 sec",
-    suffix: "",
-    end: null,
+    t: "One agent",
+    d: "Each lead goes to one agent whose preferences match. Higher plans get priority.",
+    tag: "1 agent per lead",
   },
 ];
 
@@ -147,25 +128,6 @@ export function Engine() {
           } as gsap.TweenVars);
         });
 
-        // Bottom metrics — count up where numeric (suffix text stays static).
-        const nums = gsap.utils.toArray<HTMLElement>("[data-stage-num]", grid);
-        nums.forEach((el) => {
-          const i = Number(el.dataset.stageNum);
-          const stage = STAGES[i];
-          if (!stage || stage.end === null || !stage.format) return;
-          const { end, format } = stage;
-          const proxy = { v: 0 };
-          gsap.to(proxy, {
-            v: end,
-            duration: 1.6,
-            ease: "power2.out",
-            delay: i * 0.1,
-            scrollTrigger: { trigger: grid, start: "top 85%", once: true },
-            onUpdate: () => {
-              el.textContent = format(proxy.v);
-            },
-          });
-        });
       });
     },
     { scope: sectionRef },
@@ -189,18 +151,19 @@ export function Engine() {
           >
             Five stages.
             <br />
-            One unfair
+            One real
             <br />
-            <span className="text-mtl-accent">advantage.</span>
+            <span className="text-mtl-accent">conversation.</span>
           </h2>
         </div>
         <p
           ref={paraRef}
           className="max-w-[540px] text-[15px] leading-[1.55] text-mtl-fg-2 md:mt-auto md:text-[17px]"
         >
-          Every lead is processed through five layers before it touches your inbox. The leads you
-          see have already beaten 89% of competitors in your market.{" "}
-          <span className="text-mtl-fg">That&apos;s the moat.</span>
+          Every lead goes through the same five steps before it reaches you.{" "}
+          <span className="text-mtl-fg">
+            By then someone has spoken with them, and you can read or hear exactly what they said.
+          </span>
         </p>
       </div>
 
@@ -228,16 +191,7 @@ export function Engine() {
             </h3>
             <p className="mb-5 text-[13px] leading-[1.5] text-mtl-fg-2">{s.d}</p>
             <div className="mt-auto border-t border-mtl-line pt-3">
-              <div className="mtl-num text-[20px] text-mtl-accent">
-                {s.end !== null ? (
-                  <>
-                    <span data-stage-num={i}>{s.num}</span>
-                    {s.suffix}
-                  </>
-                ) : (
-                  s.num
-                )}
-              </div>
+              <div className="mtl-num text-[20px] text-mtl-accent">{s.tag}</div>
             </div>
           </li>
         ))}

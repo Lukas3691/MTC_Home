@@ -6,8 +6,6 @@ import { TickerBand } from "@/components/landing/ticker";
 import { FeedSection } from "@/components/landing/feed";
 import { Engine } from "@/components/landing/engine";
 import { ComparePanel } from "@/components/landing/compare";
-import { ProofBand } from "@/components/landing/proof";
-import { Testimonials } from "@/components/landing/testimonials";
 import { Pricing } from "@/components/landing/pricing";
 import { FooterCTA } from "@/components/landing/footer-cta";
 
@@ -28,7 +26,7 @@ const productJsonLd = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description:
-    "AI-powered lead engine for Canadian realtors. Pre-qualified buyers and sellers, scored 0–100 on intent, financing, and timeline, delivered to your dashboard in real time.",
+    "AI-powered lead engine for Canadian realtors. Our AI assistant calls each enquiry, scores the conversation 0–100, and sends each qualified lead to one agent with the summary, transcript, and recording.",
   offers: {
     "@type": "AggregateOffer",
     lowPrice: "179",
@@ -64,8 +62,6 @@ export default function Home() {
           <FeedSection />
           <Engine />
           <ComparePanel />
-          <ProofBand />
-          <Testimonials />
           <Pricing />
         </main>
         <FooterCTA />
