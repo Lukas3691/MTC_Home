@@ -114,7 +114,7 @@ export function Pricing() {
           </h2>
           <p data-reveal className="mb-5 text-[15px] leading-[1.5] text-mtl-fg-2 md:text-[17px]">
             Each lead goes to one agent. Leads arrive as they are qualified and matched to you, so
-            we don&apos;t promise a set number per month. Plans start at $179/mo USD.
+            we don&apos;t promise a set number per month. Plans start at $119/mo USD.
           </p>
           <ul className="m-0 flex list-none flex-col gap-[10px] p-0">
             {TRUST_BULLETS.map((x) => (

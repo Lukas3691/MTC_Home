@@ -10,7 +10,7 @@ const PILL_TEXT = "$ ./qualified --realtor";
 const HERO_FACTS = [
   { value: "1", label: "agent per lead" },
   { value: "0–100", label: "score from the call" },
-  { value: "$179", label: "plans from, USD/mo" },
+  { value: "$119", label: "plans from, USD/mo" },
 ];
 
 /* ── neon money-tree image sequence ── */
@@ -320,7 +320,7 @@ export function Hero() {
                 href={SIGNUP_URL}
                 className="mtl-btn mtl-btn-primary px-5 py-[15px] text-[14px] md:px-6 md:py-[18px] md:text-[16px]"
               >
-                $ subscribe — from 179/mo
+                $ subscribe — from 119/mo
               </a>
               <a
                 href="#feed"

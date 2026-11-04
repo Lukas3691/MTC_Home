@@ -1,6 +1,6 @@
 # Money Tree Leads
 
-> AI-powered lead engine for Canadian realtors. An AI assistant calls each enquiry from ad campaigns and scores the conversation 0–100 on timeline, budget, and motivation. Each lead goes to one agent, with the summary, transcript, and recording. Four plans, $179–$1,199/month USD, cancel any time.
+> AI-powered lead engine for Canadian realtors. An AI assistant calls each enquiry from ad campaigns and scores the conversation 0–100 on timeline, budget, and motivation. Each lead goes to one agent, with the summary, transcript, and recording. Four plans, $119–$800/month USD, cancel any time.
 
 Money Tree Leads (legal entity: Money Tree Conversions, Edmonton, Alberta, Canada) sells exclusive real estate leads to agents in Canada.
 
@@ -14,7 +14,7 @@ Money Tree Leads (legal entity: Money Tree Conversions, Edmonton, Alberta, Canad
 - What the agent receives: name, phone, email, language, area, AI summary, score, call transcript, and recording
 - Lead volume: no set number of leads per month is promised; delivery depends on the enquiries that come in
 - Also included: an AI phone assistant on the agent's own number, and a calendar
-- Pricing: Bronze $179/month (pay per lead), Silver $499/month + $250 setup, Gold $699/month + $200 setup, Platinum $1,199/month; all USD
+- Pricing: Bronze $119/month (pay per lead), Silver $329/month + $250 setup, Gold $469/month + $200 setup, Platinum $800/month; all USD
 - Cancellation: cancel any time
 - Sign up: https://app.moneytreeleads.ca/sign-up
 - Log in: https://app.moneytreeleads.ca/sign-in

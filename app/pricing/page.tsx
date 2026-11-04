@@ -7,12 +7,12 @@ const SITE_URL = "https://www.moneytreeleads.ca";
 const PAGE_URL = `${SITE_URL}/pricing`;
 
 export const metadata: Metadata = {
-  title: "Pricing — Plans from $179/mo USD for Pre-Qualified Real Estate Leads | Money Tree Leads",
+  title: "Pricing — Plans from $119/mo USD for Pre-Qualified Real Estate Leads | Money Tree Leads",
   description:
-    "Money Tree Leads pricing: four tiers from $179 to $1,199/month USD for phone-verified, AI-qualified real estate leads. No annual contract, cancel anytime.",
+    "Money Tree Leads pricing: four tiers from $119 to $800/month USD for phone-verified, AI-qualified real estate leads. No annual contract, cancel anytime.",
   alternates: { canonical: "/pricing" },
   openGraph: {
-    title: "Money Tree Leads Pricing — Plans From $179/mo USD",
+    title: "Money Tree Leads Pricing — Plans From $119/mo USD",
     description:
       "Phone-verified, AI-qualified leads, exclusive to you. Four tiers, no annual contract, cancel anytime.",
     url: PAGE_URL,
@@ -32,7 +32,7 @@ const pageJsonLd = {
       "@type": "WebPage",
       "@id": `${PAGE_URL}/#webpage`,
       url: PAGE_URL,
-      name: "Money Tree Leads Pricing — Plans From $179/month USD",
+      name: "Money Tree Leads Pricing — Plans From $119/month USD",
       isPartOf: { "@id": `${SITE_URL}/#website` },
       about: { "@id": `${SITE_URL}/#software` },
       inLanguage: "en-CA",
@@ -81,7 +81,7 @@ export default function PricingPage() {
         <SubpageSection heading="What you get compared with portal leads">
           <p className="mb-5 max-w-[680px] text-[14px] leading-[1.6] text-mtl-fg-2 md:text-[15px]">
             Portal leads are typically form-fill inquiries, often shared between agents. Money Tree
-            Leads starts at <strong className="text-mtl-fg">$179/month USD</strong>, and our AI
+            Leads starts at <strong className="text-mtl-fg">$119/month USD</strong>, and our AI
             assistant speaks with each qualified lead before you receive it.
           </p>
           <div className="max-w-[680px] overflow-hidden rounded-[18px] border border-mtl-line">
@@ -162,7 +162,7 @@ export default function PricingPage() {
         <SubpageSection heading="Pricing questions">
           <QA q="How much does Money Tree Leads cost?">
             <p>
-              Plans run from $179/month USD to $1,199/month USD. Bronze is pay-per-lead. Silver,
+              Plans run from $119/month USD to $800/month USD. Bronze is pay-per-lead. Silver,
               Gold, and Platinum include leads as they become available, with higher plans getting
               priority. Platinum also includes unlimited assistant talk &amp; text.
             </p>
