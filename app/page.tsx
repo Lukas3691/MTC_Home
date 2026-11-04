@@ -29,14 +29,14 @@ const productJsonLd = {
     "AI-powered lead engine for Canadian realtors. Our AI assistant calls each enquiry, scores the conversation 0–100, and sends each qualified lead to one agent with the summary, transcript, and recording.",
   offers: {
     "@type": "AggregateOffer",
-    lowPrice: "179",
-    highPrice: "1199",
+    lowPrice: "119",
+    highPrice: "800",
     priceCurrency: "USD",
     offerCount: "4",
     url: "https://app.moneytreeleads.ca/sign-up",
     category: "Monthly subscription",
     description:
-      "Four tiers, $179–$1,199/month USD. Exclusive leads, one agent each. Cancel any time.",
+      "Four tiers, $119–$800/month USD. Exclusive leads, one agent each. Cancel any time.",
   },
   publisher: { "@id": `${SITE_URL}/#organization` },
   audience: {

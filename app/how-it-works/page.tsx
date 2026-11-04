@@ -155,7 +155,7 @@ export default function HowItWorksPage() {
             you where to start. A lead nobody could reach is marked cold and only appears in the
             lead feed, at a lower price. See{" "}
             <Link href="/pricing" className="text-mtl-accent underline-offset-4 hover:underline">
-              plans starting at $179/month USD
+              plans starting at $119/month USD
             </Link>
             .
           </p>

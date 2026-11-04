@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Money Tree Leads — Pre-Qualified Real Estate Leads for Canadian Realtors",
   description:
-    "AI-powered lead engine for Canadian realtors. Our AI assistant calls each enquiry, scores the conversation 0–100, and sends each qualified lead to one agent with the summary, transcript, and recording. Plans from $179/mo USD.",
+    "AI-powered lead engine for Canadian realtors. Our AI assistant calls each enquiry, scores the conversation 0–100, and sends each qualified lead to one agent with the summary, transcript, and recording. Plans from $119/mo USD.",
   applicationName: "Money Tree Leads",
   category: "Real Estate Lead Generation",
   keywords: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Money Tree Leads — Watch Warm Leads Stream In",
     description:
-      "Pre-qualified real estate leads for Canadian realtors, scored by AI. Plans from $179/mo USD.",
+      "Pre-qualified real estate leads for Canadian realtors, scored by AI. Plans from $119/mo USD.",
     url: SITE_URL,
     siteName: "Money Tree Leads",
     locale: "en_CA",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Money Tree Leads — Watch Warm Leads Stream In",
     description:
-      "Pre-qualified real estate leads for Canadian realtors, scored by AI. Plans from $179/mo USD.",
+      "Pre-qualified real estate leads for Canadian realtors, scored by AI. Plans from $119/mo USD.",
   },
 };
 

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Money Tree Leads — pre-qualified real estate leads for Canadian realtors, plans from $179/mo";
+  "Money Tree Leads — pre-qualified real estate leads for Canadian realtors, plans from $119/mo";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -101,7 +101,7 @@ export default function OpenGraphImage() {
               fontWeight: 700,
             }}
           >
-            From $179/mo
+            From $119/mo
           </div>
         </div>
       </div>

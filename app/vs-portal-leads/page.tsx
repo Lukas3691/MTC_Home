@@ -156,7 +156,7 @@ export default function VsPortalLeadsPage() {
               If you are an individual agent or a small team and your time is the scarce resource,
               starting from a conversation may suit you better. Plans start at{" "}
               <Link href="/pricing" className="text-mtl-accent underline-offset-4 hover:underline">
-                $179/month USD
+                $119/month USD
               </Link>
               .
             </p>

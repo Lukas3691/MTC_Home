@@ -21,7 +21,7 @@ export const TIERS: Tier[] = [
   {
     id: "bronze",
     name: "Bronze",
-    price: 179,
+    price: 119,
     setupFee: 0,
     highlights: [
       "Pay-per-lead access (flash offers & feed)",
@@ -33,7 +33,7 @@ export const TIERS: Tier[] = [
   {
     id: "silver",
     name: "Silver",
-    price: 499,
+    price: 329,
     setupFee: 250,
     highlights: [
       "Included leads as they become available",
@@ -45,7 +45,7 @@ export const TIERS: Tier[] = [
   {
     id: "gold",
     name: "Gold",
-    price: 699,
+    price: 469,
     setupFee: 200,
     popular: true,
     highlights: [
@@ -58,7 +58,7 @@ export const TIERS: Tier[] = [
   {
     id: "platinum",
     name: "Platinum",
-    price: 1199,
+    price: 800,
     setupFee: 0,
     highlights: [
       "Included leads, highest priority",
